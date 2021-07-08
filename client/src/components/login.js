@@ -1,16 +1,18 @@
 import React , {useState} from 'react'
 import LatexTextBox from './latexTextBox';
+
+const rounds = 10; // constant for hash function.
+
 const Login = () => {
     const [uid, setUid] = useState("");
     const [pass, setPass] = useState(""); 
     const [auth, setAuth] = useState(false);
+    const url = 'http://localhost:5000/'
 
     const submitForm = (e) => {
         e.preventDefault();
-        if(uid === 'abc' && pass === 'abc'){ // just using username: abc password: abc now will add DB later. 
-            setAuth(true);
-        }
     }
+
     return (
         <>
         {!auth? 
