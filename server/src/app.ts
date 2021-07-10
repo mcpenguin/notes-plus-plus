@@ -1,6 +1,5 @@
 import express, {Request, Response, Application, NextFunction} from 'express'; import { userRoute } from './routes/user';
 
-
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000; 
 const app:Application = express(); 
